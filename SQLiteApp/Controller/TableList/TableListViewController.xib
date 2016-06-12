@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TableListViewController">
+            <connections>
+                <outlet property="dataBaseNodeMenu" destination="2HF-l2-dkJ" id="P3D-es-j2d"/>
+                <outlet property="dataNavigationView" destination="9Mr-pU-PI3" id="Vc1-Bn-zEv"/>
+                <outlet property="tableNodeMenu" destination="1uF-uk-aRA" id="w8m-w7-NbL"/>
+                <outlet property="treeView" destination="Qwx-W2-fI2" id="C9m-0T-p6a"/>
+                <outlet property="view" destination="0tW-st-kPU" id="dom-39-ZLj"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="0tW-st-kPU">
+            <rect key="frame" x="0.0" y="0.0" width="274" height="303"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="30" horizontalPageScroll="10" verticalLineScroll="30" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgn-RA-hYO">
+                    <rect key="frame" x="0.0" y="30" width="274" height="272"/>
+                    <clipView key="contentView" id="lv8-LK-MQm">
+                        <rect key="frame" x="0.0" y="0.0" width="274" height="272"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowHeight="28" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="K3J-cx-fPk" id="Qwx-W2-fI2" customClass="TableListView">
+                                <rect key="frame" x="0.0" y="0.0" width="274" height="272"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <size key="intercellSpacing" width="3" height="2"/>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <tableColumns>
+                                    <tableColumn identifier="name" width="271" minWidth="40" maxWidth="1000" id="K3J-cx-fPk">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="1KU-7g-Nbz">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <prototypeCellViews>
+                                            <tableCellView identifier="database" id="kUv-84-4Fp" userLabel="DB Cell View">
+                                                <rect key="frame" x="1" y="1" width="271" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6r1-uy-Mjd" userLabel="DB Image View">
+                                                        <rect key="frame" x="2" y="3" width="20" height="20"/>
+                                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="database" id="5yH-tw-Fuu"/>
+                                                    </imageView>
+                                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzm-rp-CU8" userLabel="DB Name View Cell">
+                                                        <rect key="frame" x="24" y="5" width="232" height="17"/>
+                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Database Name" id="wvN-QI-SNT">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <connections>
+                                                    <outlet property="textField" destination="dzm-rp-CU8" id="G4s-aO-TpP"/>
+                                                </connections>
+                                            </tableCellView>
+                                            <tableCellView identifier="table" id="01d-LG-TmU" userLabel="DBTable Cell View">
+                                                <rect key="frame" x="1" y="31" width="271" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zQ-ip-HGC" userLabel="DBTable Image View">
+                                                        <rect key="frame" x="3" y="4" width="20" height="20"/>
+                                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="table" id="0PD-me-d0j"/>
+                                                    </imageView>
+                                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Sc-ku-V8V" userLabel="DBTable Name View Cell">
+                                                        <rect key="frame" x="23" y="7" width="245" height="17"/>
+                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Database Table  Name" id="1ka-ms-HE2">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <connections>
+                                                    <outlet property="textField" destination="7Sc-ku-V8V" id="RtN-74-CUM"/>
+                                                </connections>
+                                            </tableCellView>
+                                        </prototypeCellViews>
+                                    </tableColumn>
+                                </tableColumns>
+                            </outlineView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="8ch-Fs-QvI">
+                        <rect key="frame" x="1" y="254" width="272" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="b36-rA-HdK">
+                        <rect key="frame" x="224" y="17" width="15" height="102"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="9Mr-pU-PI3" customClass="DataNavigationView">
+                    <rect key="frame" x="0.0" y="0.0" width="274" height="30"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9Mr-pU-PI3" firstAttribute="leading" secondItem="0tW-st-kPU" secondAttribute="leading" id="1Hi-Gh-Nq9"/>
+                <constraint firstItem="9Mr-pU-PI3" firstAttribute="top" secondItem="Wgn-RA-hYO" secondAttribute="bottom" id="656-tD-GcE"/>
+                <constraint firstAttribute="bottom" secondItem="9Mr-pU-PI3" secondAttribute="bottom" id="9OP-iQ-t7j"/>
+                <constraint firstItem="Wgn-RA-hYO" firstAttribute="leading" secondItem="0tW-st-kPU" secondAttribute="leading" id="MQN-6N-Y3p"/>
+                <constraint firstAttribute="trailing" secondItem="9Mr-pU-PI3" secondAttribute="trailing" id="W15-Ak-YEx"/>
+                <constraint firstItem="Wgn-RA-hYO" firstAttribute="top" secondItem="0tW-st-kPU" secondAttribute="top" constant="1" id="pDp-Mt-xJZ"/>
+                <constraint firstAttribute="bottom" secondItem="Wgn-RA-hYO" secondAttribute="bottom" constant="30" id="qtp-ut-YEg"/>
+                <constraint firstAttribute="trailing" secondItem="Wgn-RA-hYO" secondAttribute="trailing" id="ugy-bN-sDv"/>
+            </constraints>
+            <point key="canvasLocation" x="170" y="268.5"/>
+        </customView>
+        <menu title="Table" id="1uF-uk-aRA">
+            <items>
+                <menuItem title="Duplicate Table" tag="1" id="neE-jo-iIO">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="duplicateTableMenuItemClicked:" target="-2" id="3pZ-cB-ood"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Rename Table" tag="2" id="ZJq-yw-m0n">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="renameTableMenuItemClicked:" target="-2" id="MmW-QL-Z7E"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Drop Table" tag="4" id="yN3-67-ysd">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="dropTableMenuItemClicked:" target="-2" id="y8p-6e-QzI"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Empty Table" tag="6" id="sUd-lC-PZq">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="emptyTableMenuItemClicked:" target="-2" id="R7z-jA-WAy"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <menu title="Table" id="2HF-l2-dkJ" userLabel="DB Database Menu">
+            <items>
+                <menuItem title="Open In Finder" tag="1" id="ZwV-Zf-Np6">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="dataBaseOpenInFinderMenuItemClicked:" target="-2" id="FRd-wb-TzD"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Close Database" tag="2" id="1qY-5h-MNC">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="dataBaseCloseMenuItemClicked:" target="-2" id="u6z-cK-MYU"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+    <resources>
+        <image name="database" width="20" height="20"/>
+        <image name="table" width="16" height="16"/>
+    </resources>
+</document>

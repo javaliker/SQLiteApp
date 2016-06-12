@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AppMainWindowController">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="SQLiteApp" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="300" y="500" width="695" height="264"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="695" height="264"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="C15249BA-2DF7-43A1-AAA9-938EB763850E" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="lMa-EL-DnC">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="iky-4d-uVj"/>
+                    <toolbarItem implicitItemIdentifier="DEA58F60-E60A-4157-8D65-122B2CDE8CC1" explicitItemIdentifier="OpenDB" label="Open" paletteLabel="Open" tag="-1" image="openDB" id="0Xd-z3-eqA">
+                        <connections>
+                            <action selector="openToolBarClicked:" target="-2" id="u2i-wn-1l5"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="ECF7215C-5DCC-4155-8B14-549136955956" explicitItemIdentifier="closeDB" label="Close" paletteLabel="Close" tag="-1" image="closeDB" id="rS4-ig-Ept">
+                        <connections>
+                            <action selector="closeToolBarClicked:" target="-2" id="Mgo-JQ-rWJ"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="DCF73665-D117-4ED8-BD21-FE17CE62B4C0" explicitItemIdentifier="Home" label="Home" paletteLabel="Home" tag="-1" image="home" id="1Ws-C5-V4Z">
+                        <connections>
+                            <action selector="homeToolBarClicked:" target="-2" id="4lQ-DT-0gg"/>
+                        </connections>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="0Xd-z3-eqA"/>
+                    <toolbarItem reference="rS4-ig-Ept"/>
+                    <toolbarItem reference="iky-4d-uVj"/>
+                    <toolbarItem reference="1Ws-C5-V4Z"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="241.5" y="213"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="closeDB" width="32" height="32"/>
+        <image name="home" width="32" height="32"/>
+        <image name="openDB" width="32" height="32"/>
+    </resources>
+</document>

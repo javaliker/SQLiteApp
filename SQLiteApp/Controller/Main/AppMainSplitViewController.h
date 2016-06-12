@@ -1,0 +1,13 @@
+//
+//  AppMainSplitViewController.h
+//  SQLiteApp
+//
+//  Created by MacDev on 5/27/16.
+//  Copyright © 2016 http://www.macdev.io All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+
+@interface AppMainSplitViewController : NSSplitViewController
+
+@end
