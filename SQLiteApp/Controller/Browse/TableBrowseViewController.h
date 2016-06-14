@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "NoXibViewController.h"
 #import "TableDataNavigationViewController.h"
 @interface TableBrowseViewController : TableDataNavigationViewController
 

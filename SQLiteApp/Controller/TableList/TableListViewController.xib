@@ -8,7 +8,6 @@
         <customObject id="-2" userLabel="File's Owner" customClass="TableListViewController">
             <connections>
                 <outlet property="dataBaseNodeMenu" destination="2HF-l2-dkJ" id="P3D-es-j2d"/>
-                <outlet property="dataNavigationView" destination="9Mr-pU-PI3" id="Vc1-Bn-zEv"/>
                 <outlet property="tableNodeMenu" destination="1uF-uk-aRA" id="w8m-w7-NbL"/>
                 <outlet property="treeView" destination="Qwx-W2-fI2" id="C9m-0T-p6a"/>
                 <outlet property="view" destination="0tW-st-kPU" id="dom-39-ZLj"/>
@@ -21,13 +20,13 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="30" horizontalPageScroll="10" verticalLineScroll="30" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgn-RA-hYO">
-                    <rect key="frame" x="0.0" y="30" width="274" height="272"/>
+                    <rect key="frame" x="0.0" y="2" width="274" height="300"/>
                     <clipView key="contentView" id="lv8-LK-MQm">
-                        <rect key="frame" x="0.0" y="0.0" width="274" height="272"/>
+                        <rect key="frame" x="0.0" y="0.0" width="274" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowHeight="28" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="K3J-cx-fPk" id="Qwx-W2-fI2" customClass="TableListView">
-                                <rect key="frame" x="0.0" y="0.0" width="274" height="272"/>
+                                <rect key="frame" x="0.0" y="0.0" width="274" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -104,18 +103,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>
-                <customView translatesAutoresizingMaskIntoConstraints="NO" id="9Mr-pU-PI3" customClass="DataNavigationView">
-                    <rect key="frame" x="0.0" y="0.0" width="274" height="30"/>
-                </customView>
             </subviews>
             <constraints>
-                <constraint firstItem="9Mr-pU-PI3" firstAttribute="leading" secondItem="0tW-st-kPU" secondAttribute="leading" id="1Hi-Gh-Nq9"/>
-                <constraint firstItem="9Mr-pU-PI3" firstAttribute="top" secondItem="Wgn-RA-hYO" secondAttribute="bottom" id="656-tD-GcE"/>
-                <constraint firstAttribute="bottom" secondItem="9Mr-pU-PI3" secondAttribute="bottom" id="9OP-iQ-t7j"/>
                 <constraint firstItem="Wgn-RA-hYO" firstAttribute="leading" secondItem="0tW-st-kPU" secondAttribute="leading" id="MQN-6N-Y3p"/>
-                <constraint firstAttribute="trailing" secondItem="9Mr-pU-PI3" secondAttribute="trailing" id="W15-Ak-YEx"/>
                 <constraint firstItem="Wgn-RA-hYO" firstAttribute="top" secondItem="0tW-st-kPU" secondAttribute="top" constant="1" id="pDp-Mt-xJZ"/>
-                <constraint firstAttribute="bottom" secondItem="Wgn-RA-hYO" secondAttribute="bottom" constant="30" id="qtp-ut-YEg"/>
+                <constraint firstAttribute="bottom" secondItem="Wgn-RA-hYO" secondAttribute="bottom" constant="2" id="qtp-ut-YEg"/>
                 <constraint firstAttribute="trailing" secondItem="Wgn-RA-hYO" secondAttribute="trailing" id="ugy-bN-sDv"/>
             </constraints>
             <point key="canvasLocation" x="170" y="268.5"/>

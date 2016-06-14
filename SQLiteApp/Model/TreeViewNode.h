@@ -10,8 +10,6 @@
 
 @interface TreeViewNode : NSObject
 @property(nonatomic,strong)NSString *name;//名称
-@property(nonatomic,strong)NSString *type;//名称
-@property(nonatomic,assign)NSInteger count;//子节点个数
-@property(nonatomic,assign)BOOL isLeaf;//是否叶子节点
-@property(nonatomic,strong)NSArray *children;//子节点
+@property(nonatomic,strong)NSString *type;//节点是数据库还是表的类型
+@property(nonatomic,strong)NSArray  *children;//子节点
 @end

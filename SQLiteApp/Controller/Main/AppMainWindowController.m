@@ -29,24 +29,18 @@ extern NSString* const kCloseDBNotification;
 }
 
 - (void)configWindowFrameSize {
-    
     NSRect frame = [[NSScreen mainScreen] visibleFrame];
     frame.size.height = 500;
-    frame.size.width = 1000;
+    frame.size.width  = 1000;
     [self.window setFrame:frame display:YES];
-
-    //[self.window center];
-    
 }
 
 - (void)setWindowIcon {
-    
     [self.window setRepresentedURL:[NSURL URLWithString:@"WindowTitle"]];
     [self.window setTitle:@"SQLiteApp"];
     NSImage *image = [NSImage imageNamed:@"windowIcon"];
     [[self.window standardWindowButton:NSWindowDocumentIconButton] setImage:image];
 }
-
 
 - (NSString*)windowNibName {
     return @"AppMainWindowController";
@@ -74,7 +68,6 @@ extern NSString* const kCloseDBNotification;
         }
     }];
 
-    
 }
 
 - (IBAction)closeToolBarClicked:(id)sender {
@@ -105,9 +98,6 @@ extern NSString* const kCloseDBNotification;
                       }
          ];
         return;
-    
-
-    
 }
 
 
@@ -123,7 +113,6 @@ extern NSString* const kCloseDBNotification;
 #pragma mark -- ivars
 
 - (AppMainSplitViewController *)splitViewController {
-    
     if(!_splitViewController){
         _splitViewController = [[AppMainSplitViewController alloc]init];
     }

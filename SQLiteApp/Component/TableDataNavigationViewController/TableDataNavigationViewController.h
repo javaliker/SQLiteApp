@@ -7,10 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "NoXibViewController.h"
+#import "XibViewController.h"
 #define  kPageSize   20
 @class DataPageManager,DataNavigationView;
-@interface TableDataNavigationViewController : NoXibViewController
+@interface TableDataNavigationViewController : XibViewController
 @property(nonatomic,strong)NSTableView  *tableView;
 @property(nonatomic,strong)NSScrollView *tableViewScrollView;
 @property(nonatomic,strong)DataNavigationView *dataNavigationView;

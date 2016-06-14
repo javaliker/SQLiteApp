@@ -25,7 +25,7 @@
 
 @property(nonatomic,readonly)NSInteger  page;//current page index
 
-@property(nonatomic,readonly)NSInteger  pageSize;//row numbers of each page
+@property(nonatomic,assign)NSInteger  pageSize;//row numbers of each page
 
 @property(nonatomic,readonly)NSInteger  pages;//total pages
 

@@ -19,8 +19,9 @@
     
     NSDictionary *node = (NSDictionary *)item ;
     NSString *type     = [node valueForKey:@"type"];
-    NSString *name     = [node valueForKey:@"name"];
-    NSView *result  =  [outlineView makeViewWithIdentifier:type owner:self];
+    NSString *identifier = tableColumn.identifier;
+    NSString *name     = [node valueForKey:identifier];
+    NSView   *result   =  [outlineView makeViewWithIdentifier:type owner:self];
     
     NSTextField *cell = result.subviews[1];
     if(name){

@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self addChildViewControllers];
     // Do view setup here.
 }
@@ -29,7 +30,7 @@
 - (void)addChildViewControllers {
     
     TableBrowseViewController *dataViewController = [[TableBrowseViewController alloc]init];
-    dataViewController.title = @"Data";
+    dataViewController.title = @"Browse";
     
     
     TableSchemaViewController *schemaViewController = [[TableSchemaViewController alloc]init];

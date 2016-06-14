@@ -41,6 +41,8 @@ NSString* const kCloseDBNotification = @"CloseDBNotification";
     [super viewDidLoad];
     // Do view setup here.
     
+   
+    
     if(![[DataStoreBO sharedInstance]openDefaultDB]){
         NSLog(@"Open Default Database Failed!");
         return;

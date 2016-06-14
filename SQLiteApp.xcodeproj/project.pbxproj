@@ -61,9 +61,6 @@
 		71B73FED1D0CF6A7005933F0 /* DataNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B73FE61D0CF6A7005933F0 /* DataNavigationItem.m */; };
 		71B73FEE1D0CF6A7005933F0 /* DataNavigationTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B73FE81D0CF6A7005933F0 /* DataNavigationTextItem.m */; };
 		71B73FEF1D0CF6A7005933F0 /* DataNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B73FEA1D0CF6A7005933F0 /* DataNavigationView.m */; };
-		71B73FF61D0CF70D005933F0 /* NoXibTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B73FF21D0CF70D005933F0 /* NoXibTableViewController.m */; };
-		71B73FF71D0CF70D005933F0 /* NoXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B73FF41D0CF70D005933F0 /* NoXibViewController.m */; };
-		71B73FF81D0CF70D005933F0 /* NoXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B73FF51D0CF70D005933F0 /* NoXibViewController.xib */; };
 		71B73FFD1D0CF85E005933F0 /* TableListSelectionState.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B73FFA1D0CF85E005933F0 /* TableListSelectionState.m */; };
 		71B73FFE1D0CF85E005933F0 /* TableListSelectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B73FFC1D0CF85E005933F0 /* TableListSelectionManager.m */; };
 		71B740011D0CF913005933F0 /* TreeViewNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B740001D0CF913005933F0 /* TreeViewNode.m */; };
@@ -85,6 +82,9 @@
 		71B740331D0CFB93005933F0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B740321D0CFB93005933F0 /* MainMenu.xib */; };
 		71B7403A1D0CFC04005933F0 /* AppMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B740371D0CFC04005933F0 /* AppMainWindowController.m */; };
 		71B7403B1D0CFC04005933F0 /* AppMainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B740381D0CFC04005933F0 /* AppMainWindowController.xib */; };
+		71B740401D0E5084005933F0 /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B7403E1D0E5084005933F0 /* XibViewController.m */; };
+		71B740411D0E5084005933F0 /* XibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B7403F1D0E5084005933F0 /* XibViewController.xib */; };
+		71B740441D0E50A2005933F0 /* NoXibTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B740431D0E50A2005933F0 /* NoXibTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -211,11 +211,6 @@
 		71B73FE81D0CF6A7005933F0 /* DataNavigationTextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataNavigationTextItem.m; sourceTree = "<group>"; };
 		71B73FE91D0CF6A7005933F0 /* DataNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataNavigationView.h; sourceTree = "<group>"; };
 		71B73FEA1D0CF6A7005933F0 /* DataNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataNavigationView.m; sourceTree = "<group>"; };
-		71B73FF11D0CF70D005933F0 /* NoXibTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoXibTableViewController.h; sourceTree = "<group>"; };
-		71B73FF21D0CF70D005933F0 /* NoXibTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoXibTableViewController.m; sourceTree = "<group>"; };
-		71B73FF31D0CF70D005933F0 /* NoXibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoXibViewController.h; sourceTree = "<group>"; };
-		71B73FF41D0CF70D005933F0 /* NoXibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoXibViewController.m; sourceTree = "<group>"; };
-		71B73FF51D0CF70D005933F0 /* NoXibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoXibViewController.xib; sourceTree = "<group>"; };
 		71B73FF91D0CF85E005933F0 /* TableListSelectionState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableListSelectionState.h; sourceTree = "<group>"; };
 		71B73FFA1D0CF85E005933F0 /* TableListSelectionState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableListSelectionState.m; sourceTree = "<group>"; };
 		71B73FFB1D0CF85E005933F0 /* TableListSelectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableListSelectionManager.h; sourceTree = "<group>"; };
@@ -253,6 +248,11 @@
 		71B740341D0CFC04005933F0 /* AppMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMainWindowController.h; sourceTree = "<group>"; };
 		71B740371D0CFC04005933F0 /* AppMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppMainWindowController.m; sourceTree = "<group>"; };
 		71B740381D0CFC04005933F0 /* AppMainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppMainWindowController.xib; sourceTree = "<group>"; };
+		71B7403D1D0E5084005933F0 /* XibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
+		71B7403E1D0E5084005933F0 /* XibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
+		71B7403F1D0E5084005933F0 /* XibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibViewController.xib; sourceTree = "<group>"; };
+		71B740421D0E50A2005933F0 /* NoXibTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoXibTableViewController.h; sourceTree = "<group>"; };
+		71B740431D0E50A2005933F0 /* NoXibTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoXibTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,8 +352,8 @@
 		71B73F3E1D0CF42E005933F0 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				71B7403C1D0E5057005933F0 /* XibViewController */,
 				71B740021D0CF949005933F0 /* TreeViewDataDelegate */,
-				71B73FF01D0CF706005933F0 /* NoXib */,
 				71B73FD61D0CF685005933F0 /* TableDataNavigationViewController */,
 				71B73FA81D0CF631005933F0 /* DataStoreBO */,
 				71B73FAB1D0CF631005933F0 /* MDatabase */,
@@ -598,18 +598,6 @@
 			path = DataNavigationView;
 			sourceTree = "<group>";
 		};
-		71B73FF01D0CF706005933F0 /* NoXib */ = {
-			isa = PBXGroup;
-			children = (
-				71B73FF11D0CF70D005933F0 /* NoXibTableViewController.h */,
-				71B73FF21D0CF70D005933F0 /* NoXibTableViewController.m */,
-				71B73FF31D0CF70D005933F0 /* NoXibViewController.h */,
-				71B73FF41D0CF70D005933F0 /* NoXibViewController.m */,
-				71B73FF51D0CF70D005933F0 /* NoXibViewController.xib */,
-			);
-			path = NoXib;
-			sourceTree = "<group>";
-		};
 		71B740021D0CF949005933F0 /* TreeViewDataDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -682,6 +670,18 @@
 			path = TableList;
 			sourceTree = "<group>";
 		};
+		71B7403C1D0E5057005933F0 /* XibViewController */ = {
+			isa = PBXGroup;
+			children = (
+				71B740421D0E50A2005933F0 /* NoXibTableViewController.h */,
+				71B740431D0E50A2005933F0 /* NoXibTableViewController.m */,
+				71B7403D1D0E5084005933F0 /* XibViewController.h */,
+				71B7403E1D0E5084005933F0 /* XibViewController.m */,
+				71B7403F1D0E5084005933F0 /* XibViewController.xib */,
+			);
+			path = XibViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -740,12 +740,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B740411D0E5084005933F0 /* XibViewController.xib in Resources */,
 				71B7403B1D0CFC04005933F0 /* AppMainWindowController.xib in Resources */,
 				71B7402E1D0CFA2E005933F0 /* AppMainSplitViewController.xib in Resources */,
 				71B73F321D0CF378005933F0 /* Assets.xcassets in Resources */,
 				71B73FA71D0CF551005933F0 /* MacDev.sqlite in Resources */,
 				71B740281D0CFA17005933F0 /* TableQueryViewController.xib in Resources */,
-				71B73FF81D0CF70D005933F0 /* NoXibViewController.xib in Resources */,
 				71B73F951D0CF4ED005933F0 /* Info.plist in Resources */,
 				71B740131D0CF9ED005933F0 /* TableListViewController.xib in Resources */,
 				71B740331D0CFB93005933F0 /* MainMenu.xib in Resources */,
@@ -766,7 +766,6 @@
 				71B73F301D0CF378005933F0 /* main.m in Sources */,
 				71B73F9E1D0CF4ED005933F0 /* NSArray+MASAdditions.m in Sources */,
 				71B73F5B1D0CF46C005933F0 /* NSColor+CGColor.m in Sources */,
-				71B73FF61D0CF70D005933F0 /* NoXibTableViewController.m in Sources */,
 				71B740291D0CFA17005933F0 /* QueryDataDelegate.m in Sources */,
 				71B73F901D0CF4ED005933F0 /* FMDatabase.m in Sources */,
 				71B7403A1D0CFC04005933F0 /* AppMainWindowController.m in Sources */,
@@ -801,6 +800,7 @@
 				71B73FDE1D0CF685005933F0 /* TableDataNavigationViewController.m in Sources */,
 				71B73F5F1D0CF46C005933F0 /* NSButton+Category.m in Sources */,
 				71B73FCF1D0CF631005933F0 /* DatabaseInfo.m in Sources */,
+				71B740401D0E5084005933F0 /* XibViewController.m in Sources */,
 				71B7402D1D0CFA2E005933F0 /* AppMainSplitViewController.m in Sources */,
 				71B73F9D1D0CF4ED005933F0 /* MASViewConstraint.m in Sources */,
 				71B73F621D0CF46C005933F0 /* NSString+Category.m in Sources */,
@@ -817,11 +817,11 @@
 				71B73FEB1D0CF6A7005933F0 /* DataNavigationButtonItem.m in Sources */,
 				71B740151D0CF9ED005933F0 /* TableListViewDelegate.m in Sources */,
 				71B73FED1D0CF6A7005933F0 /* DataNavigationItem.m in Sources */,
+				71B740441D0E50A2005933F0 /* NoXibTableViewController.m in Sources */,
 				71B73F931D0CF4ED005933F0 /* FMDatabaseQueue.m in Sources */,
 				71B740141D0CF9ED005933F0 /* TableListView.m in Sources */,
 				71B73F5D1D0CF46C005933F0 /* NSTableView+Category.m in Sources */,
 				71B73FCC1D0CF631005933F0 /* MDAO.m in Sources */,
-				71B73FF71D0CF70D005933F0 /* NoXibViewController.m in Sources */,
 				71B73F911D0CF4ED005933F0 /* FMDatabaseAdditions.m in Sources */,
 				71B740011D0CF913005933F0 /* TreeViewNode.m in Sources */,
 				71B73FCD1D0CF631005933F0 /* MDatabase+Meta.m in Sources */,
@@ -963,6 +963,7 @@
 				71B73F3B1D0CF378005933F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

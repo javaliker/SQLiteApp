@@ -21,7 +21,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="695" height="264"/>
                 <autoresizingMask key="autoresizingMask"/>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="C15249BA-2DF7-43A1-AAA9-938EB763850E" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="lMa-EL-DnC">
+            <toolbar key="toolbar" implicitIdentifier="C15249BA-2DF7-43A1-AAA9-938EB763850E" autosavesConfiguration="NO" prefersToBeShown="NO" displayMode="iconAndLabel" sizeMode="regular" id="lMa-EL-DnC">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="iky-4d-uVj"/>
                     <toolbarItem implicitItemIdentifier="DEA58F60-E60A-4157-8D65-122B2CDE8CC1" explicitItemIdentifier="OpenDB" label="Open" paletteLabel="Open" tag="-1" image="openDB" id="0Xd-z3-eqA">

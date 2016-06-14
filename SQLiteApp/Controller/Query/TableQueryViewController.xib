@@ -36,10 +36,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="minSize" width="478" height="59"/>
-                                <size key="maxSize" width="478" height="10000000"/>
+                                <size key="maxSize" width="480" height="10000000"/>
                                 <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <size key="minSize" width="478" height="59"/>
-                                <size key="maxSize" width="478" height="10000000"/>
+                                <size key="maxSize" width="480" height="10000000"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,7 +67,7 @@
                 <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imp-PW-ek5">
                     <rect key="frame" x="0.0" y="28" width="480" height="204"/>
                     <clipView key="contentView" id="NQM-Qe-N1V">
-                        <rect key="frame" x="0.0" y="23" width="480" height="181"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="204"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="6lH-iw-3fu" id="oyb-pp-vcE">
@@ -84,7 +84,7 @@
                         <rect key="frame" x="1" y="118" width="238" height="16"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
-                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="sPd-dO-wiv">
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="sPd-dO-wiv">
                         <rect key="frame" x="224" y="17" width="15" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>

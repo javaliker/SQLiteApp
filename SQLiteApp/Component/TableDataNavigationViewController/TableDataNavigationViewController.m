@@ -13,13 +13,11 @@
 #import "NSTableView+Category.h"
 #import "TableColumnItem.h"
 #import "TableDataDelegate.h"
-#import "TableDataNavigationViewDelegate.h"
 
 
 extern NSString * const TableViewDragDataTypeName;
 
 @interface TableDataNavigationViewController ()<PaginatorDelegate>
-@property(nonatomic,strong)TableDataNavigationViewDelegate  *dableDataDelegate;
 @end
 
 @implementation TableDataNavigationViewController
@@ -31,6 +29,7 @@ extern NSString * const TableViewDragDataTypeName;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     [self setupAutolayout];
     // Do view setup here.
     [self tableViewStyleConfig];
@@ -46,7 +45,7 @@ extern NSString * const TableViewDragDataTypeName;
 }
 
 - (void)setupAutolayout {
-    
+    //如果界面使用xib方式的话,不进行自动布局的处理
     if([self tableXibView]){
         return;
     }
@@ -83,18 +82,7 @@ extern NSString * const TableViewDragDataTypeName;
 }
 
 - (void)tableDelegateConfig {
-    self.tableView.delegate   = self.dableDataDelegate;
-    self.tableView.dataSource = self.dableDataDelegate;
-    
-    self.dableDataDelegate.selectionChangedCallback = ^(NSInteger index,  id obj){
-        
-        NSLog(@"selectionChangedCallback obj %@",obj);
-    };
-    
-    self.dableDataDelegate.rowObjectValueChangedCallback = ^(id obj,id oldObj,NSInteger row,NSString *fieldName){
-        
-    };
-    
+     // subclass override this in subclass
 }
 
 - (void)tableViewStyleConfig {
@@ -255,9 +243,8 @@ extern NSString * const TableViewDragDataTypeName;
     [self.tableView endUpdates];
 
     
-    //id data = [self.dableDataDelegate itemOfRow:selectedRow];
-    
-    [self.dableDataDelegate deleteDataAtIndex:selectedRow];
+    //id data = [self.dataDelegate itemOfRow:selectedRow];
+    //[self.dataDelegate deleteDataAtIndex:selectedRow];
     
     //[self.datas removeObject:data];
     //更新页数据
@@ -268,7 +255,6 @@ extern NSString * const TableViewDragDataTypeName;
 
 
 #pragma mark ***** PaginatorDelegate *****
-
 
 - (void)paginator:(id)paginator requestDataWithPage:(NSInteger)page pageSize:(NSInteger)pageSize {
     // override this in subclass
@@ -327,7 +313,6 @@ extern NSString * const TableViewDragDataTypeName;
         if(_tableViewScrollView){
             return _tableViewScrollView;
         }
-        
         _tableViewScrollView = [[NSScrollView alloc] init];
         [_tableViewScrollView setHasVerticalScroller:NO];
         [_tableViewScrollView setHasHorizontalScroller:NO];
@@ -355,7 +340,6 @@ extern NSString * const TableViewDragDataTypeName;
 - (DataNavigationView *)dataNavigationView {
     if(!_dataNavigationView){
         _dataNavigationView = [self dataNavigationXibView];
-       
         if(_dataNavigationView){
             return _dataNavigationView;
         }

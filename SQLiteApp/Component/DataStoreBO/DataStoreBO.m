@@ -12,7 +12,6 @@
 #import "Constant.h"
 
 @interface DataStoreBO ()
-@property(nonatomic,strong)NSMutableDictionary *dataBaseCache;
 @property(nonatomic,readwrite)DatabaseInfo *databaseInfo;
 @property(nonatomic,readwrite)DAO          *defaultDao;
 @end
@@ -40,7 +39,6 @@
 
 - (void)clear {
     _databaseInfo = nil;
-    _dataBaseCache = nil;
     [[MDatabase sharedInstance]close];
 }
 
@@ -62,13 +60,6 @@
     return [self.databaseInfo tableInfoWithName:tableName];
 }
 
-- (NSMutableDictionary*)dataBaseCache {
-
-    if(!_dataBaseCache){
-        _dataBaseCache = [[NSMutableDictionary alloc]init];
-    }
-    return _dataBaseCache;
-}
 
 
 - (DAO*)defaultDao {

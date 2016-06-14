@@ -11,8 +11,6 @@
 @interface DataPageManager ()
 @property(nonatomic,readwrite)NSInteger  page;//current page index
 
-@property(nonatomic,readwrite)NSInteger  pageSize;//row numbers of each page
-
 @property(nonatomic,readwrite)NSInteger  pages;//total pages
 
 @property(nonatomic,readwrite)NSInteger  total;//total data rows
